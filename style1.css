@@ -1,0 +1,48 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.gallery {
+    padding: 20px;
+display: flex;
+flex-wrap: wrap;          /* 要素を折り返す設定 */
+gap: 15px;
+justify-content: center;  /* 要素を中央に揃える */
+align-items: center;      /* 要素を中央揃え */
+
+}
+
+.gallery a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 2秒遅延表示用 */
+.delay {
+    opacity: 0;
+    animation: appear 1s ease 2s forwards;
+}
+
+/* 遅延表示用のキーフレーム */
+@keyframes appear {
+    to { opacity: 1; }
+}
